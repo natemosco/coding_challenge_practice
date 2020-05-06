@@ -8,6 +8,6 @@
     2. If two triplet elements have the same first and second elements, then they should beordered such that the smaller third element comes first.
     3. If no such triplets can be found in the array, your function should return an empty array.
 
-*   Example 1:Input: [12, 3, 1, 2, -6, 5, -8, 6], 0Expected Output: [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
+*   Example 1:Input: [12, 3, 1, 2, -6, 5, -8, 6], 0 Expected Output: [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
 
-*   Example 2: Input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 15], 30Expected Output: [[6, 9, 15], [7, 8, 15]]
+*   Example 2: Input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 15], 30 Expected Output: [[6, 9, 15], [7, 8, 15]]
