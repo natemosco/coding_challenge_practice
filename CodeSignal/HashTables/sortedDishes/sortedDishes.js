@@ -4,9 +4,15 @@ function groupingDishes(dishes) {
     for (let i = 0; i < dishes.length; i++) {
         for (let j = 1; j < dishes[i].length; j++) {
             if (hash[dishes[i][j]]) {
-                hash[dishes[i][j]].push(dishes[i][0]);
+                let dishArray = hash[dishes][i][j];
+                let dish = dishes[i][0];
+                if (dishArray.includes(dish)) {
+                    continue;
+                } else {
+                    dishArray.push(dish);
+                }
             } else {
-                hash[dishes[i][j]] = [dishes[i][0]];
+                hash[dishes[i][j]] = [dish];
             }
         }
     }
