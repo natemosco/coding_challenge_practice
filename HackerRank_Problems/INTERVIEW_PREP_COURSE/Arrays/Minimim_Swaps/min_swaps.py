@@ -9,10 +9,10 @@ def minimumSwaps(arr):
 
     while biggest > 0:
         if lastIndex == ref[biggest]:
-            print('hit?', biggest)
             biggest -= 1
             lastIndex = biggest - 1
             continue
+
         index_largest_came_from = ref[biggest]
         currently_in_last_slot = arr[lastIndex]
 
