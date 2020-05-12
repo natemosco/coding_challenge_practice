@@ -26,3 +26,18 @@ def minimumSwaps(arr):
         lastIndex = biggest - 1
 
     return swap
+
+
+def minSwaps(arr):
+    index = len(arr) - 1
+    swap_count = 0
+
+    while index >= 0:
+        target_index = arr[index] - 1
+        if target_index != index:
+            arr[index], arr[target_index] = arr[target_index], arr[index]
+            swap_count += 1
+        else:
+            index -= 1
+
+    return swap
